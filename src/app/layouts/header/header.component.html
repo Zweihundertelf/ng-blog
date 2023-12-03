@@ -1,0 +1,20 @@
+<header
+  class="container flex items-center justify-between px-5 mx-auto my-6 md:px-10"
+>
+  <h1 class="text-3xl font-bold"><a routerLink="/">NgBlog</a></h1>
+  <nav>
+    <ul class="flex gap-4">
+      @for (item of items; track $index) {
+        <li>
+          <a
+            routerLink="{{ item.path }}"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+          >
+            {{ item.name }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>

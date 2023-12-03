@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { BlogPostComponent } from './blog-post/blog-post.component';
-import { BlogComponent } from './blog/blog.component';
-import { HomeComponent } from './home/home.component';
+import { BlogPostComponent } from '@modules/blog-post/blog-post.component';
+import { BlogComponent } from '@modules/blog/blog.component';
+import { HomeComponent } from '@modules/home/home.component';
 
 export const routes: Routes = [
   {
@@ -16,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'blog/:slug',
     component: BlogPostComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];

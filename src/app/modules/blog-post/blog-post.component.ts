@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './blog-post.component.html',
-  styleUrl: './blog-post.component.scss',
 })
 export class BlogPostComponent {
   slug: string | undefined;

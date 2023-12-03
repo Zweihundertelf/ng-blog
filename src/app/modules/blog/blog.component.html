@@ -1,0 +1,12 @@
+<h1 class="pt-5 pb-10 text-3xl font-bold text-center">Blog</h1>
+
+<section>
+  @for (post of blogPosts; track $index) {
+    <div>
+      <h2>
+        <a routerLink="{{ post.slug }}">{{ post.title }}</a>
+      </h2>
+      <div>{{ post.preview }}</div>
+    </div>
+  }
+</section>
