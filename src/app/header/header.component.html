@@ -1,0 +1,14 @@
+<header
+  class="flex justify-between container mx-auto px-5 md:px-10 items-center my-6"
+>
+  <h1 class="text-3xl font-bold"><a routerLink="/">NgBlog</a></h1>
+  <nav>
+    <ul class="flex gap-4">
+      @for (item of items; track $index) {
+        <li>
+          <a routerLink="{{ item.path }}">{{ item.name }}</a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>
